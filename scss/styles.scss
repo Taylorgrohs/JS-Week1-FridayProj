@@ -1,3 +1,50 @@
 body {
-  color: blue
+  color: blue;
+  background-color: #fbfcfc;
+  }
+
+h3 {
+  text-decoration: underline;
+}
+
+.githubName {
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
+
+.jumbotron {
+  justify-content: center;
+  display: flex;
+  background-color: #95a5a6;
+  text-shadow: 20px 20px 20px gray;
+  color: #fbfcfc;
+}
+
+#form {
+  justify-content: center;
+  display: flex;
+}
+
+.repo {
+  justify-content: center;
+}
+
+#picture {
+  justify-content: center;
+  padding-left: 120px;
+  padding-top: 20px;
+}
+
+#repo {
+  display: none;
 }
