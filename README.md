@@ -10,7 +10,7 @@ _This app lets you enter a github username and it will display their profile, in
 
 ## Setup/Installation Requirements
 
-* To view the project you create a .env file in the root folder and put in your own apiKey with the line "exports.apiKey = 'key goes here';". after that you will need to run the following commands in the terminal, 'npm install' once that is done you then run 'bower install' followed by 'gulp build' finishing with 'gulp serve' assuming there were no errors during the installs.
+* To view the project you create a .env file in the root folder and put in your own apiKey with the line "exports.apiKey = 'key goes here';". After that you will need to run the following commands in the terminal, 'npm install' once that is done you then run 'bower install' followed by 'gulp build' finishing with 'gulp serve' assuming there were no errors during the installs.
 
 
 ## Support and contact details
