@@ -1,5 +1,5 @@
 var apiKey = require('./../.env').apiKey;
-var time = require('./../js/time-interface.js').time;
+var time = require('./../js/time.js').time;
 $(document).ready(function(){
   $('#getName').submit(function(event){
     event.preventDefault();
@@ -12,6 +12,13 @@ $(document).ready(function(){
     console.log(response);
     $('#picture').append('<img src='+ response[0].owner.avatar_url+'>');
     $('.githubName').append("<h2>" + displayName + "</h2>");
+    $.get('https://api.github.com/users/' + gitName + '/followers?access_token=' + apiKey).then(function(follower){
+      console.log(follower);
+      $.get('https://api.github.com/users/' + gitName + '/following?access_token=' + apiKey).then(function(following){
+        console.log(following);
+      $('.githubName').append("<p>Followers: " + follower.length + " || Following: " + following.length + "</p>");
+      });
+    });
     for(var i = 0; i < response.length; i++)
     {
       $('.repo').prepend('<ul><li> Created: ' + time(response[i].created_at) + '</li></ul>');

@@ -1,10 +1,18 @@
 body {
-  color: blue;
-  background-color: #fbfcfc;
+  color: #34495e;
+  background-color: #E3E5E6;
   }
 
 h3 {
   text-decoration: underline;
+}
+
+.picContain {
+  margin-left: 55px;
+  background-color: #34495e;
+  height: 350px;
+  width: 475px;
+  padding-right: 10px;
 }
 
 .githubName {
@@ -15,6 +23,7 @@ h3 {
 
 h2 {
   font-size: 30px;
+  text-decoration: underline;
 }
 
 img {
@@ -41,8 +50,10 @@ img {
 
 #picture {
   justify-content: center;
-  padding-left: 120px;
+  padding-left: 100px;
   padding-top: 20px;
+  height: 350px;
+  width: 500px;
 }
 
 #repo {
